@@ -1,0 +1,19 @@
+{
+  "name": "led-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.9.7"
+  },
+  "scripts": {
+    "start": "babel src --out-dir dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7"
+  }
+}
