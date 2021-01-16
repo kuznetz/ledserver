@@ -7,7 +7,7 @@ After=network.target
 Type=simple
 User=root
 ExecStart=/usr/bin/npm start
-WorkingDirectory=/led-server
+WorkingDirectory=/led-server/rpi
 Restart=on-failure
 
 [Install]

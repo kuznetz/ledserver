@@ -1,0 +1,11 @@
+{
+  "name": "led-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.9.7"
+  }
+}

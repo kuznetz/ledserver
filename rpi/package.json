@@ -11,8 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rpi-ws281x-native": "^0.10.0",
-    "dayjs": "^1.9.7"
+    "rpi-ws281x-native": "^0.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
