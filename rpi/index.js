@@ -1,5 +1,5 @@
 import Screen from './screen'
-import LedServer from '../src'
+import LedServer from '../led-server'
 
 const 
   screenW=12,
