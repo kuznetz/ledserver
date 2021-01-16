@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node --nolazy --inspect -- index.js --inspect",
-    "build": "babel index.js --out-dir dist",
-    "start": "node index.js"
+    "dev": "nodemon --exec babel-node --nolazy --inspect -- src --inspect",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
