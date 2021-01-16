@@ -46,7 +46,7 @@ export default class {
   }  
 
   start() {
-    this.timeout = setTimeout(()=>{ this.onFinish() },2000)
+    this.timeout = setTimeout(()=>{ this.onFinish() },3000)
     this.timeout2 = setTimeout(()=>{ this.renderYear() },2000)
     this.renderPicture()
   }
