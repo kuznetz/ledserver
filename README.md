@@ -2,8 +2,9 @@
 Led Server for Raspberry Pi for matrix 12x12 made from neopixel led strip
 
 Common operation (before):
-- cd src
+- cd led-server
 - npm i
+- npm start
 
 Run dev web server (http://localhost:8080/) on any platform:
 - cd browser
