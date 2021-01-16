@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rpi-ws281x-native": "^0.10.0"
+    "rpi-ws281x-native": "^0.10.0",
+    "led-server": "file:../led-server"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
