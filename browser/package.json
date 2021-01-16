@@ -17,5 +17,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "led-server": "file:../led-server"
   }
 }
