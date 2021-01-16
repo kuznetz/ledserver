@@ -1,0 +1,1 @@
+MAKE js resource with digits from bmp pictures

@@ -1,0 +1,1 @@
+MAKE js resource from bmp picture

@@ -1,0 +1,14 @@
+[Unit]
+Description=RPi Led Server
+After=network.target
+
+[Service]
+#Environment=NODE_PORT=3001
+Type=simple
+User=root
+ExecStart=/usr/bin/npm start
+WorkingDirectory=/led-server
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
