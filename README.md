@@ -1,8 +1,19 @@
 # ledserver
 Led Server for Raspberry Pi for matrix 12x12 made from neopixel led strip
-On Raspberry Pi OS from root:
+
+Common operation (before):
+- cd src
+- npm i
+
+Run dev web server (http://localhost:8080/) on any platform:
+- cd browser
+- npm i
+- npm start
+
+Prod server on Raspberry Pi OS from root:
+- cd rpi
 - npm i --unsafe-perm
 - npm run build
 - npm start
 
-You may copy led-server.service to /etc/systemd/system to autostart server
+You may copy rpi/led-server.service to /etc/systemd/system to autostart server
