@@ -35,7 +35,7 @@ export default class {
   }
 
   start() {
-    this.timeout = setTimeout(()=>{ this.onFinish() },2000)
+    this.timeout = setTimeout(()=>{ this.onFinish() },4000)
     this.render()
   }
 
