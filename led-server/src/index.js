@@ -1,7 +1,8 @@
 import Tetris from './tetris'
 import CurTime from './curtime'
 import Arcanoid from './arcanoid'
-import Picture from './picture'
+import Snake from './snake'
+//import Picture from './picture'
 
 const 
   screenW=12,
@@ -13,9 +14,10 @@ export default class {
     this.screen = screen
     this.scenes = [
       new Tetris(screen),
-      new Arcanoid(screen),  
-      new Picture(screen),
+      new Arcanoid(screen),
+      new Snake(screen),      
       new CurTime(screen),
+      //new Picture(screen),
     ]
     for (let i in this.scenes) {
       this.scenes[i].onFinish = ()=>{ this.restart() }
