@@ -23,7 +23,7 @@ class Weather {
         let needLoad = true
         if (this.lastRequest) {
             let diff = dayjs().diff(this.lastRequest,"seconds")
-            console.log('diff',diff)
+            //console.log('diff',diff)
             if (diff < 30*60) {
                 needLoad = false
             }

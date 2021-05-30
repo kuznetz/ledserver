@@ -46,7 +46,7 @@ export default class {
   
   render() {
     weather.getTemp().then((temp)=>{
-        console.log('temp',temp)
+        //console.log('temp',temp)
         let pic = temp>0 ? tempPlus : tempMinus
         let tempStr = Math.abs(Math.round(temp)).toFixed(0)
         //console.log('time',time)

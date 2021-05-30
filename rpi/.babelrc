@@ -13,5 +13,12 @@
       "sourceMap": "inline",
       "retainLines": true
     }
-  }  
+  },
+  "plugins": [[
+    "auto-import", {
+      "declarations": [
+        { "default": "fetch", "path": "node-fetch" }
+      ]
+    }
+  ]]
 }
