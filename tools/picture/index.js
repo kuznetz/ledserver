@@ -19,7 +19,7 @@ function pixelToRGB(px) {
 async function run() {
   let image = await Jimp.read("./picture.bmp")
   let imgArr = []
-  for (let y=0; y<12; y++) {
+  for (let y=0; y<6; y++) {
     for (let x=0; x<12; x++) {
       let px = (image.getPixelColor(x, y))
       let rgb = pixelToRGB(px)
