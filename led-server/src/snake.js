@@ -4,7 +4,7 @@ const nx=12,ny=12;
 function randomInt(max) { return Math.floor(Math.random() * max) };
 
 export default class {
-  
+
   randColor() {
     return colors[randomInt(colors.length)]
   }  
@@ -56,16 +56,27 @@ export default class {
     let lastPos = this.snakePos.slice(-1)[0]
     let newPos = this.getNewPos(lastPos)
     if (newPos === null) {
-        this.stop()
+       this.stop()
        this.onFinish()
        return
     }
     if (newPos[0] === this.foodPos[0] && newPos[1] === this.foodPos[1]) {
-        this.changeFoodPos()
+      this.snakeLen += 2
+      this.changeFoodPos()
     }
+    this.clearSnake()
     this.snakePos.push(newPos)
+    if (this.snakePos.length > this.snakeLen) {
+      this.snakePos.splice(0,1)
+    }
     this.renderSnake()
     this.screen.refresh()
+  }
+
+  clearSnake() {
+    for (let pos of this.snakePos) {
+        this.screen.set(pos,[0,0,0])
+    }
   }
 
   renderSnake() {
@@ -91,6 +102,7 @@ export default class {
   }
 
   start() {
+    this.snakeLen = 10
     this.snakeColors = []
     for (let i=0; i<4; i++) {
         this.snakeColors.push(this.randColor())
@@ -110,7 +122,7 @@ export default class {
     this.endTimeout = setTimeout(()=>{
       this.stop()
       this.onFinish()
-    },20000)
+    },30000)
     this.tick()
   }
 
@@ -126,6 +138,7 @@ export default class {
     this.screen = screen
     this.interval = null
     this.endTimeout = null
+    this.snakeLen = null
     this.onFinish = ()=>{}
     this.clear()
   }
