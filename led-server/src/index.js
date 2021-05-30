@@ -3,6 +3,7 @@ import CurTime from './curtime'
 import Arcanoid from './arcanoid'
 import Snake from './snake'
 //import Picture from './picture'
+import Temp from './temp'
 
 const 
   screenW=12,
@@ -13,10 +14,15 @@ export default class {
   constructor(screen) {
     this.screen = screen
     this.scenes = [
-      new Tetris(screen),
-      new Arcanoid(screen),
-      new Snake(screen),      
       new CurTime(screen),
+      new Temp(screen),
+      new Tetris(screen),//
+      new CurTime(screen),
+      new Temp(screen),
+      new Arcanoid(screen),//
+      new CurTime(screen),
+      new Temp(screen),
+      new Snake(screen),//
       //new Picture(screen),
     ]
     for (let i in this.scenes) {
