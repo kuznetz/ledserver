@@ -2,7 +2,7 @@ import Tetris from './tetris'
 import CurTime from './curtime'
 import Arcanoid from './arcanoid'
 import Snake from './snake'
-//import Picture from './picture'
+import Picture from './picture'
 import Temp from './temp'
 
 const 
@@ -23,7 +23,7 @@ export default class {
       new CurTime(screen),
       new Temp(screen),
       new Snake(screen),//
-      //new Picture(screen),
+      new Picture(screen),
     ]
     for (let i in this.scenes) {
       this.scenes[i].onFinish = ()=>{ this.restart() }

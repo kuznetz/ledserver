@@ -1,0 +1,9 @@
+Со стороны RPI
+VCC
+GND
+DATA - (default: 18 for the first channel and 12 for the second channel)
+
+Со стороны LED
+Фиол - сигнал
+Бел - плюс 5
+Сер - GND
